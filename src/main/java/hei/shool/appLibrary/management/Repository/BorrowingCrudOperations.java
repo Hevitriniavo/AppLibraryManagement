@@ -15,19 +15,16 @@ public class BorrowingCrudOperations extends DatabaseConnection implements CrudO
 
     @Override
     public List<Borrowing> saveAll(List<Borrowing> toSave) {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'saveAll'");
     }
 
     @Override
     public Borrowing save(Borrowing toSave) {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'save'");
     }
 
     @Override
     public Borrowing delete(Borrowing toDelete) {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'delete'");
     }
 
