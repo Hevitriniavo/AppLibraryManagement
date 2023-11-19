@@ -8,8 +8,8 @@ public class Subscriber extends User{
     private String reference;
     private List<Borrowing> borrowings;
 
-    public Subscriber(long id, String name, Sex sex, String reference, List<Borrowing> borrowings) {
-        super(id, name, sex);
+    public Subscriber(long id, String name, String reference, List<Borrowing> borrowings) {
+        super(id, name);
         this.reference = reference;
         this.borrowings = borrowings;
     }

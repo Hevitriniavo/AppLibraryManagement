@@ -7,7 +7,6 @@ import java.sql.SQLException;
 public class DatabaseConnection {
     protected Connection getConnection(){
         try  {
-            System.out.println("Hello world !");
             return DatabaseSettings.connect();
         } catch (SQLException e) {
             throw new RuntimeException(e);

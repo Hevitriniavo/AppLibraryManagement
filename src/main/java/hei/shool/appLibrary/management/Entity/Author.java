@@ -8,18 +8,11 @@ import java.util.Objects;
 
 public class Author extends User{
     private List<Book> books;
+    private Sex sex;
 
-    public Author(long id, String name, Sex sex) {
-        super(id, name, sex);
+    public Author(long id, String name) {
+        super(id, name);
         this.books = new ArrayList<>();
-    }
-
-    public List<Book> getBooks() {
-        return books;
-    }
-
-    public void setBooks(List<Book> books) {
-        this.books = books;
     }
 
     public void addBook(Book book) {
@@ -31,22 +24,33 @@ public class Author extends User{
         books.remove(book);
         book.setAuthor(null);
     }
+
+    public List<Book> getBooks() {
+        return books;
+    }
+
+    public void setBooks(List<Book> books) {
+        this.books = books;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Author author)) return false;
-        return Objects.equals(books, author.books);
+        if (!super.equals(o)) return false;
+        return Objects.equals(books, author.books) && sex == author.sex;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(books);
+        return Objects.hash(super.hashCode(), books, sex);
     }
 
     @Override
     public String toString() {
         return "Author{" +
                 "books=" + books +
+                ", sex=" + sex +
                 super.toString()+
                 '}';
     }

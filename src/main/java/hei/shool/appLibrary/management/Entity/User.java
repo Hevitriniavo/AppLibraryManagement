@@ -5,12 +5,10 @@ import java.util.Objects;
 public class User {
     private long id;
     private String name;
-    private Sex sex;
 
-    public User(long id, String name, Sex sex) {
+    public User(long id, String name) {
         this.id = id;
         this.name = name;
-        this.sex = sex;
     }
 
     public long getId() {
@@ -29,24 +27,16 @@ public class User {
         this.name = name;
     }
 
-    public Sex getSex() {
-        return sex;
-    }
-
-    public void setSex(Sex sex) {
-        this.sex = sex;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof User user)) return false;
-        return id == user.id && Objects.equals(name, user.name) && sex == user.sex;
+        return id == user.id && Objects.equals(name, user.name);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, sex);
+        return Objects.hash(id, name);
     }
 
     @Override
@@ -54,7 +44,6 @@ public class User {
         return "User{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", sex=" + sex +
                 '}';
     }
 

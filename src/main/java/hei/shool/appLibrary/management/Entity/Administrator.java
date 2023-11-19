@@ -14,8 +14,8 @@ public class Administrator extends User {
     private LocalDateTime createdAt;
     private List<Borrowing> borrowings;
 
-    public Administrator(long id, String name, Sex sex, String role, String email, String password, LocalDateTime createdAt) {
-        super(id, name, sex);
+    public Administrator(long id, String name, String role, String email, String password, LocalDateTime createdAt) {
+        super(id, name);
         this.role = role;
         this.email = email;
         this.password = password;
