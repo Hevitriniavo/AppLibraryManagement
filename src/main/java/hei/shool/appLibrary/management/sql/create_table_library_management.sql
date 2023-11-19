@@ -1,10 +1,4 @@
-	---- psql -d library_management -a -f script.sql
-	DROP DATABASE IF EXISTS library_management;
-
-	CREATE DATABASE library_management;
-
-	\c library_management;
-
+	---- psql -d library_management -a -f create_table_library_management.sql
 	CREATE TABLE IF NOT EXISTS  "author" (
 	    id SERIAL PRIMARY KEY,
 	    name VARCHAR(255) NOT NULL,
