@@ -1,6 +1,7 @@
 package hei.shool.appLibrary.management.Entity;
 
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -8,11 +9,12 @@ public class Subscriber extends User{
     private String reference;
     private List<Borrowing> borrowings;
 
-    public Subscriber(long id, String name, String reference, List<Borrowing> borrowings) {
+    public Subscriber(long id, String name, String reference) {
         super(id, name);
         this.reference = reference;
-        this.borrowings = borrowings;
+        this.borrowings = new ArrayList<>();
     }
+
 
     public void addBorrowing(Borrowing borrowing) {
         borrowings.add(borrowing);

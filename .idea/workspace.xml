@@ -6,13 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="781f16fd-f71a-4082-9d3f-1d4cad20227d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hei/shool/appLibrary/management/DatabaseConfig/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hei/shool/appLibrary/management/DatabaseConfig/DatabaseConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hei/shool/appLibrary/management/Entity/Administrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hei/shool/appLibrary/management/Entity/Administrator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hei/shool/appLibrary/management/Entity/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hei/shool/appLibrary/management/Entity/Author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hei/shool/appLibrary/management/Entity/Subscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hei/shool/appLibrary/management/Entity/Subscriber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hei/shool/appLibrary/management/Entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hei/shool/appLibrary/management/Entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hei/shool/appLibrary/management/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hei/shool/appLibrary/management/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hei/shool/appLibrary/management/Repository/AdministratorCrudOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hei/shool/appLibrary/management/Repository/AdministratorCrudOperations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hei/shool/appLibrary/management/Repository/BorrowingCrudOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hei/shool/appLibrary/management/Repository/BorrowingCrudOperations.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +84,7 @@
       <workItem from="1700409325288" duration="13000" />
       <workItem from="1700409426682" duration="148000" />
       <workItem from="1700411135349" duration="566000" />
+      <workItem from="1700411826789" duration="804000" />
     </task>
     <servers />
   </component>
