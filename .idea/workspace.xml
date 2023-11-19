@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="781f16fd-f71a-4082-9d3f-1d4cad20227d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hei/shool/appLibrary/management/Entity/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hei/shool/appLibrary/management/Entity/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hei/shool/appLibrary/management/Entity/Borrowing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hei/shool/appLibrary/management/Entity/Administrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hei/shool/appLibrary/management/Entity/Administrator.java" afterDir="false" />
-    </list>
+    <list default="true" id="781f16fd-f71a-4082-9d3f-1d4cad20227d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,8 +13,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Enum" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -57,7 +53,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700400076334</updated>
-      <workItem from="1700400077920" duration="2642000" />
+      <workItem from="1700400077920" duration="3033000" />
     </task>
     <servers />
   </component>
