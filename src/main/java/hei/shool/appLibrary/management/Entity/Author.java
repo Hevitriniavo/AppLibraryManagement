@@ -10,11 +10,13 @@ public class Author extends User{
     private List<Book> books;
     private Sex sex;
 
-    public Author(long id, String name) {
+    public Author(long id, String name, Sex sex) {
         super(id, name);
         this.books = new ArrayList<>();
+        this.sex = sex;
     }
 
+    
     public void addBook(Book book) {
         books.add(book);
         book.setAuthor(this);
@@ -53,5 +55,15 @@ public class Author extends User{
                 ", sex=" + sex +
                 super.toString()+
                 '}';
+    }
+
+
+    public Sex getSex() {
+        return sex;
+    }
+
+
+    public void setSex(Sex sex) {
+        this.sex = sex;
     }
 }

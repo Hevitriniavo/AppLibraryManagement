@@ -46,7 +46,7 @@ public class AdministratorCrudOperations extends DatabaseConnection implements C
 
     @Override
     public List<Administrator> saveAll(List<Administrator> toSave) {
-        String query = "INSERT INTO administrator (name, role, email, password, created_at) VALUES (?, ?, ?, ?, ?)";
+        String query = "INSERT INTO \"administrator\" (name, role, email, password, created_at) VALUES (?, ?, ?, ?, ?)";
         Connection connection = this.getConnection();
         try (PreparedStatement preparedStatement = connection.prepareStatement(query)) {
             for (Administrator admin : toSave) {
@@ -61,7 +61,7 @@ public class AdministratorCrudOperations extends DatabaseConnection implements C
     }
     @Override
     public Administrator save(Administrator toSave) {
-        String query = "INSERT INTO administrator (name, role, email, password, created_at) VALUES (?, ?, ?, ?, ?)";
+        String query = "INSERT INTO \"administrator\" (name, role, email, password, created_at) VALUES (?, ?, ?, ?, ?)";
         Connection connection = this.getConnection();
         try (PreparedStatement preparedStatement = connection.prepareStatement(query)) {
             this.setAdminParams(preparedStatement, toSave);
@@ -75,7 +75,7 @@ public class AdministratorCrudOperations extends DatabaseConnection implements C
 
     @Override
     public Administrator delete(Administrator toDelete) {
-        String query = "DELETE FROM administrator WHERE id = ?";
+        String query = "DELETE FROM \"administrator\" WHERE id = ?";
         Connection connection = this.getConnection();
         try (PreparedStatement preparedStatement = connection.prepareStatement(query)) {
             preparedStatement.setLong(1, toDelete.getId());
